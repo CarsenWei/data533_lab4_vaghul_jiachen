@@ -1,6 +1,12 @@
 language: python
 python:
   - "3.6"
+
+install:
+  - pip install -r pandas
+  - pip install -r pyodbc
+  - pip install -r mysql
+
 # command to run tests
 script:
   - python testsuite/unittests/testcleanup.py
